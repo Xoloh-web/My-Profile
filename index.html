@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <title>Noxolo | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+ <body>
+    <div id="preloader"></div>
+    <nav>
+  <div class="nav-container">
+    <h1 class="logo">Web Designer</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+ </nav>
+
+   <header class="hero-section" id="home">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Hello, I'm Noxolo Mdluli</h1>
+      <p class="tagline">Web Designer • WordPress Developer • Digital Creative</p>
+      <p class="summary">
+        I'm a self-taught front-end web designer passionate about building clean, responsive websites for small businesses. With skills in HTML, CSS, WordPress, and a love for beautiful design, I help brands shine online — even on a budget. I'm also continuously learning and improving my skills so I can offer more value to my clients. From SEO basics to user experience and responsive layouts, I ensure every website I create not only looks good but also performs well. My goal is to make it easy for small businesses and entrepreneurs to build a strong online presence — without the stress or huge cost. I believe in clear communication, honest service, and designing with heart.
+      </p>
+      <a href="#contact" class="btn">Let’s Work Together</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/WhatsApp Image 2025-06-13 at 13.08.15_3a6daca6.jpg" alt="Noxolo Mdluli">
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="images/WhatsApp Image 2025-06-09 at 11.59.17_e83d87c3.jpg" alt="Noxolo Mdluli">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Noxolo — a passionate front-end web designer who helps small businesses create websites that look beautiful and perform brilliantly. With skills in HTML, CSS, WordPress and SEO, I bring ideas to life through elegant, responsive design.
+      </p>
+      <p>
+        I work with entrepreneurs and startups to build brands from the ground up. My designs are minimal, fast, and made with purpose — whether it's a portfolio, an online store or a service-based site.
+      </p>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+ <section class="services" id="services">
+  <h2>What I Do</h2>
+  <div class="services-container">
+    <div class="service-box">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Web Design</h3>
+      <p>Clean, mobile-friendly websites built with HTML, CSS or WordPress</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-wordpress"></i>
+      <h3>WordPress Setup</h3>
+      <p>Clean, professional WordPress websites that are easy to manage.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Branding</h3>
+      <p>Designs that help your brand stand out and stay memorable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <h2>My Work</h2>
+  <div class="portfolio-container">
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Small Biz Website</h3>
+      <p>Responsive one-page business site with WhatsApp integration.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Portfolio Site</h3>
+      <p>Clean and modern personal branding website.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h2>What People Say</h2>
+  <div class="testimonials-container">
+    <div class="testimonial-card">
+      <p>"Noxolo made my brand shine online. Highly recommend!"</p>
+      <h4>– Thando M.</h4>
+    </div>
+    <div class="testimonial-card">
+        <p>"She's quick, creative, and professional. Loved the result!"</p>
+      <h4>– Sipho L.</h4>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h4>How long does it take to build a website?</h4>
+    <p>Basic sites can be done in 3–5 days. Custom projects take longer depending on your needs.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you offer updates after launch?</h4>
+    <p>Yes! I provide ongoing support and content changes if needed.</p>
+  </div>
+</section>
+
+<section class="contact-form" id="contact">
+  <h2>Let's Connect</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  window.addEventListener('load', function () {
+    document.getElementById('preloader').style.display = 'none';
+  });
+</script>
+<footer>
+  <p>&copy; 2025 Noxolo Mdluli. All rights reserved.</p>
+  <div class="socials">
+    <a href="https://www.facebook.com/share/16SMVzuoMp/?mibextid=qi2Omg" target="_blank">Facebook</a> |
+    <a href="https://whatsapp.com/dl/" target="_blank">WhatsApp</a> |
+    <a href="mailto:noxoloamukele20@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+</body>
+</html>
